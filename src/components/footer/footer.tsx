@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import {
   Copyright,
@@ -7,18 +7,18 @@ import {
   Instagram,
   Linkedin,
   Twitter,
-} from 'lucide-react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import Balancer from 'react-wrap-balancer'
+} from 'lucide-react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Balancer from 'react-wrap-balancer';
 
-import { siteConfig } from '@/data/app'
-import { footerNavigationData } from '@/data/app/globals'
-import { cn } from '@/lib/utils'
+import { siteConfig } from '@/data/app';
+import { footerNavigationData } from '@/data/app/globals';
+import { cn } from '@/lib/utils';
 
 const Footer = () => {
-  const router = usePathname()
-  const isContactPage = router === '/contact'
+  const router = usePathname();
+  const isContactPage = router === '/contact';
 
   return (
     <>
@@ -34,12 +34,12 @@ const Footer = () => {
             'sm:py-5',
             'md:py-12',
             'lg:py-16',
-            'xl:py-20',
+            'xl:py-20'
           )}
         >
           <div
             className={cn(
-              'flex flex-wrap items-start justify-between text-slate-50',
+              'flex flex-wrap items-start justify-between text-slate-50'
             )}
           >
             <div className={cn('sm:w-full md:w-1/2')}>
@@ -47,7 +47,7 @@ const Footer = () => {
                 className={cn(
                   'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-400 bg-clip-text py-4 text-left tracking-tight text-transparent drop-shadow-sm',
                   'dark:from-gray-100 dark:to-gray-800',
-                  'md:text-6xl md:leading-tight',
+                  'md:text-6xl md:leading-tight'
                 )}
               >
                 <div
@@ -56,7 +56,7 @@ const Footer = () => {
                     'sm:text-5xl',
                     'md:text-6xl',
                     'lg:text-7xl',
-                    'xl:text-9xl',
+                    'xl:text-9xl'
                   )}
                 >
                   <Balancer>Let's Talk</Balancer>
@@ -69,7 +69,7 @@ const Footer = () => {
                   'sm:text-base',
                   'md:text-lg',
                   'lg:text-xl',
-                  'xl:text-2xl',
+                  'xl:text-2xl'
                 )}
               >
                 <Link href={'mailto:hey@hush.com'}>
@@ -94,7 +94,7 @@ const Footer = () => {
                   'sm:text-sm',
                   'md:text-base',
                   'lg:text-base',
-                  'xl:text-xl',
+                  'xl:text-xl'
                 )}
               >
                 <Link href={'https://maps.app.goo.gl/Rx3wYE7k8vJMtTAU8'}>
@@ -109,7 +109,7 @@ const Footer = () => {
                 'sm:gap-5 sm:text-xs',
                 'md:gap-5 md:text-sm',
                 'lg:text-sm',
-                'xl:text-xl',
+                'xl:text-xl'
               )}
             >
               <Link href={siteConfig.author.dribbble}>
@@ -136,13 +136,13 @@ const Footer = () => {
             className={cn(
               'flex flex-col items-center justify-between gap-4',
               'md:h-20 md:py-0',
-              'md:flex-row',
+              'md:flex-row'
             )}
           >
             <div
               className={cn(
                 'flex w-full justify-between gap-8',
-                'sm:flex-col md:flex-row ',
+                'sm:flex-col md:flex-row '
               )}
             >
               <p
@@ -151,7 +151,7 @@ const Footer = () => {
                   'sm:text-xs',
                   'md:text-sm',
                   'lg:text-sm',
-                  'xl:text-lg',
+                  'xl:text-lg'
                 )}
               >
                 Developed by{' '}
@@ -175,7 +175,7 @@ const Footer = () => {
                   'lg:text-sm',
                   'xl:text-lg',
                   'hover:underline hover:underline-offset-4',
-                  'sm:mr-0 md:mr-32 lg:mr-40 xl:mr-72',
+                  'sm:mr-0 md:mr-32 lg:mr-40 xl:mr-72'
                 )}
               >
                 <Copyright className={cn('mr-1')} />
@@ -186,14 +186,14 @@ const Footer = () => {
         </footer>
       )}
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
 
 interface LinkPickProps {
-  page: string
-  href: string
+  page: string;
+  href: string;
 }
 
 const LinkPick: React.FC<LinkPickProps> = ({ page, href }) => (
@@ -203,11 +203,11 @@ const LinkPick: React.FC<LinkPickProps> = ({ page, href }) => (
       'sm:text-sm',
       'md:text-base',
       'lg:text-lg',
-      'xl:text-2xl',
+      'xl:text-2xl'
     )}
   >
     <Link href={href}>
       <Balancer>{page}</Balancer>
     </Link>
   </p>
-)
+);

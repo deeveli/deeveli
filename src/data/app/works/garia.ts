@@ -53,4 +53,4 @@ export const Garia = {
   alt4a: 'garia-ux-case-study',
   ht4a: 'Bank Accreditation',
   st4a: `Garia is accredited by the Bank of Ghana to offer Corporate Governance Training to banks. This accreditation underscores Garia's commitment to excellence in providing specialized training programs that meet regulatory standards and industry best practices.`,
-}
+};

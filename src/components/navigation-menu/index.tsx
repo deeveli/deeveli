@@ -1,8 +1,16 @@
-'use client'
+'use client';
 
-import { LucidePhone, LucideTextQuote, MailCheck, PhoneCall, TextIcon, TextQuote, TextQuoteIcon } from 'lucide-react'
-import Link from 'next/link'
-import * as React from 'react'
+import {
+  LucidePhone,
+  LucideTextQuote,
+  MailCheck,
+  PhoneCall,
+  TextIcon,
+  TextQuote,
+  TextQuoteIcon,
+} from 'lucide-react';
+import Link from 'next/link';
+import * as React from 'react';
 
 import {
   NavigationMenu,
@@ -12,9 +20,9 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu'
-import { cn } from '@/lib/utils'
-import { CalloutIcon, TextField } from '@radix-ui/themes'
+} from '@/components/ui/navigation-menu';
+import { cn } from '@/lib/utils';
+import { CalloutIcon, TextField } from '@radix-ui/themes';
 
 export function NavigationMenuBar() {
   return (
@@ -41,7 +49,7 @@ export function NavigationMenuBar() {
                     <Link
                       className="hover:bg-red-300 flex size-full select-none flex-col justify-start rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                       href="https://wa.me/233201955961"
-                      target='_blank'
+                      target="_blank"
                     >
                       <LucidePhone className="size-6" />
                       <div className="mb-2 mt-4 text-lg font-medium">
@@ -83,7 +91,7 @@ export function NavigationMenuBar() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  )
+  );
 }
 
 const ListItem = React.forwardRef<
@@ -103,7 +111,7 @@ const ListItem = React.forwardRef<
             'md:text-sm',
             'lg:text-sm',
             'xl:text-xl',
-            className,
+            className
           )}
           {...props}
         >
@@ -114,6 +122,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = 'ListItem'
+  );
+});
+ListItem.displayName = 'ListItem';

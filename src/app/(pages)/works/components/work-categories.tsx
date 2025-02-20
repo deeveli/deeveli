@@ -1,22 +1,22 @@
-'use client'
+'use client';
 
-import type { SetStateAction } from 'react'
-import { useState } from 'react'
+import type { SetStateAction } from 'react';
+import { useState } from 'react';
 
-import { clients } from '@/data/app/content/clients'
-import { workCategoriesData } from '@/data/app/globals'
-import { cn } from '@/lib/utils'
+import { clients } from '@/data/app/content/clients';
+import { workCategoriesData } from '@/data/app/globals';
+import { cn } from '@/lib/utils';
 
-import WorksPick from '../components/little-fingers/works-pick'
-import WorkCategoryPick from './little-fingers/tab-pick'
-import TabContent from './little-fingers/work-contents'
+import WorksPick from '../components/little-fingers/works-pick';
+import WorkCategoryPick from './little-fingers/tab-pick';
+import TabContent from './little-fingers/work-contents';
 
 export const WorkCategories = () => {
-  const [selectedTab, setSelectedTab] = useState('All Work')
+  const [selectedTab, setSelectedTab] = useState('All Work');
 
   const handleTabClick = (tabNumber: SetStateAction<any>) => {
-    setSelectedTab(tabNumber)
-  }
+    setSelectedTab(tabNumber);
+  };
 
   return (
     <section
@@ -31,13 +31,13 @@ export const WorkCategories = () => {
         'md:py-20',
         'lg:py-30',
         'xl:py-40',
-        'align-center justify-center',
+        'align-center justify-center'
       )}
     >
       <div
         className={cn(
           'flex flex-row flex-wrap items-start justify-start',
-          'lg:my-16 xl:my-24',
+          'lg:my-16 xl:my-24'
         )}
       >
         <div className={cn('sm:w-full md:w-9/12')}>
@@ -61,7 +61,7 @@ export const WorkCategories = () => {
                       'sm:w-full sm:pb-10',
                       'md:w-full md:pb-16',
                       'lg:w-4/5 lg:pb-10',
-                      'xl:w-4/5 xl:pb-10',
+                      'xl:w-4/5 xl:pb-10'
                     )}
                   >
                     <div className={cn('w-9/12 leading-normal')}>
@@ -74,7 +74,7 @@ export const WorkCategories = () => {
         </div>
         <div
           className={cn(
-            'flex flex-col sm:ml-40 sm:w-full sm:pb-10 md:ml-0 md:w-3/12',
+            'flex flex-col sm:ml-40 sm:w-full sm:pb-10 md:ml-0 md:w-3/12'
           )}
         >
           {workCategoriesData.map((category) => (
@@ -99,15 +99,15 @@ export const WorkCategories = () => {
                   'sm:grid-cols-1 sm:gap-10',
                   'md:grid-cols-2 md:gap-16',
                   'lg:grid-cols-2 lg:gap-20',
-                  'xl:grid-cols-2 xl:gap-30',
+                  'xl:grid-cols-2 xl:gap-30'
                 )}
               >
                 {clients
-                  .filter ((archived) => archived.archived === 'No')
+                  .filter((archived) => archived.archived === 'No')
                   .filter(
                     (work) =>
                       selectedTab === 'All Work' ||
-                      work.workCategory.includes(selectedTab),
+                      work.workCategory.includes(selectedTab)
                   )
                   .map((work, index) => (
                     <WorksPick key={index} client={work} />
@@ -118,6 +118,5 @@ export const WorkCategories = () => {
         </div>
       </div>
     </section>
-  )
-}
-
+  );
+};

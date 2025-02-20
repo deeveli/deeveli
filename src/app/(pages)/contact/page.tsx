@@ -1,5 +1,5 @@
-import Contact from './components/contact-hero'
-import { ContactFooter } from './components/little-fingers/contact-footer'
+import Contact from './components/contact-hero';
+import { ContactFooter } from './components/little-fingers/contact-footer';
 
 export default function Page() {
   return (
@@ -7,5 +7,5 @@ export default function Page() {
       <Contact />
       <ContactFooter />
     </>
-  )
+  );
 }

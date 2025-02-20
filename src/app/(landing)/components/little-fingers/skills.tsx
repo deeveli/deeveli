@@ -1,7 +1,7 @@
-import Balancer from 'react-wrap-balancer'
+import Balancer from 'react-wrap-balancer';
 
-import { deeveliData } from '@/data/app/content/partners/deeveli'
-import { cn } from '@/lib/utils'
+import { deeveliData } from '@/data/app/content/partners/deeveli';
+import { cn } from '@/lib/utils';
 
 export const Skills = async () => {
   return (
@@ -16,12 +16,12 @@ export const Skills = async () => {
         'sm:py-10',
         'md:py-20',
         'lg:py-30',
-        'xl:py-40',
+        'xl:py-40'
       )}
     >
       <div
         className={cn(
-          'flex flex-row sm:flex-wrap sm:gap-20 md:flex-nowrap md:gap-20 lg:gap-60',
+          'flex flex-row sm:flex-wrap sm:gap-20 md:flex-nowrap md:gap-20 lg:gap-60'
         )}
       >
         {/* Tools */}
@@ -33,13 +33,13 @@ export const Skills = async () => {
                 'sm:text-base',
                 'md:text-lg',
                 'lg:text-xl',
-                'xl:text-3xl',
+                'xl:text-3xl'
               )}
             >
               <p
                 className={cn(
                   'font-bold underline sm:underline-offset-4 md:underline-offset-8',
-                  'sm:leading-normal md:leading-relaxed',
+                  'sm:leading-normal md:leading-relaxed'
                 )}
               >
                 <Balancer>Productivity / Stack</Balancer>
@@ -52,7 +52,7 @@ export const Skills = async () => {
                 'sm:text-xs',
                 'md:text-xs',
                 'lg:text-base',
-                'xl:text-xl',
+                'xl:text-xl'
               )}
             >
               {deeveliData.productivityTools.map((tools, index) => (
@@ -60,7 +60,7 @@ export const Skills = async () => {
                   key={index}
                   className={cn(
                     'sm:pb-1 md:pb-3',
-                    'font-normal sm:leading-normal md:leading-relaxed',
+                    'font-normal sm:leading-normal md:leading-relaxed'
                   )}
                 >
                   {tools}
@@ -73,7 +73,7 @@ export const Skills = async () => {
         <div className={cn('flex flex-wrap sm:w-full md:w-1/2')}>
           <div
             className={cn(
-              'flex w-full flex-row justify-between sm:gap-x-5 md:gap-x-10',
+              'flex w-full flex-row justify-between sm:gap-x-5 md:gap-x-10'
             )}
           >
             <div
@@ -82,13 +82,13 @@ export const Skills = async () => {
                 'sm:text-base',
                 'md:text-lg',
                 'lg:text-xl',
-                'xl:text-3xl',
+                'xl:text-3xl'
               )}
             >
               <p
                 className={cn(
                   'font-bold underline sm:underline-offset-4 md:underline-offset-8',
-                  'sm:leading-normal md:leading-relaxed',
+                  'sm:leading-normal md:leading-relaxed'
                 )}
               >
                 <Balancer>Skills</Balancer>
@@ -100,7 +100,7 @@ export const Skills = async () => {
                 'sm:text-xs',
                 'md:text-xs',
                 'lg:text-base',
-                'xl:text-xl',
+                'xl:text-xl'
               )}
             >
               {deeveliData.skills.map((tools, index) => (
@@ -108,7 +108,7 @@ export const Skills = async () => {
                   key={index}
                   className={cn(
                     'sm:pb-1 md:pb-1',
-                    'font-normal sm:leading-normal md:leading-relaxed',
+                    'font-normal sm:leading-normal md:leading-relaxed'
                   )}
                 >
                   {tools}
@@ -119,5 +119,5 @@ export const Skills = async () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

@@ -1,14 +1,14 @@
-import Link from 'next/link'
-import Balancer from 'react-wrap-balancer'
+import Link from 'next/link';
+import Balancer from 'react-wrap-balancer';
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/utils';
 
 export const ContactInfo = async () => {
   return (
     <div className={cn('flex flex-col justify-between')}>
       <div
         className={cn(
-          'items-left justify-left flex h-full w-full flex-col pb-6',
+          'items-left justify-left flex h-full w-full flex-col pb-6'
         )}
       >
         <div className={cn('')}>
@@ -22,7 +22,7 @@ export const ContactInfo = async () => {
               'md:text-7xl',
               'lg:text-8xl',
               'xl:text-9xl',
-              'xl:mb-5 xl:mt-10',
+              'xl:mb-5 xl:mt-10'
             )}
           >
             <div className={cn('sm:leading-normal md:leading-relaxed')}>
@@ -37,7 +37,7 @@ export const ContactInfo = async () => {
             'sm:text-base',
             'md:text-xl',
             'lg:text-2xl',
-            'xl:text-3xl',
+            'xl:text-3xl'
           )}
         >
           <p className={cn('sm:leading-normal md:leading-relaxed')}>
@@ -49,7 +49,7 @@ export const ContactInfo = async () => {
           <div
             className={cn(
               'flex flex-col',
-              'w-full sm:underline-offset-4 md:w-5/12 xl:underline-offset-8',
+              'w-full sm:underline-offset-4 md:w-5/12 xl:underline-offset-8'
             )}
           >
             <p
@@ -58,7 +58,7 @@ export const ContactInfo = async () => {
                 'sm:text-sm',
                 'md:text-lg',
                 'lg:text-xl',
-                'xl:text-2xl',
+                'xl:text-2xl'
               )}
             >
               Become a Client?
@@ -70,7 +70,7 @@ export const ContactInfo = async () => {
                 'sm:text-base',
                 'md:text-xl',
                 'lg:text-2xl',
-                'xl:text-3xl',
+                'xl:text-3xl'
               )}
             >
               hey@deeveli.com
@@ -83,7 +83,7 @@ export const ContactInfo = async () => {
                 'sm:text-sm',
                 'md:text-lg',
                 'lg:text-xl',
-                'xl:text-2xl',
+                'xl:text-2xl'
               )}
             >
               Need me in your team?
@@ -95,7 +95,7 @@ export const ContactInfo = async () => {
                 'sm:text-base',
                 'md:text-xl',
                 'lg:text-2xl',
-                'xl:text-3xl',
+                'xl:text-3xl'
               )}
             >
               partner@deeveli.com
@@ -108,7 +108,7 @@ export const ContactInfo = async () => {
                 'sm:text-sm',
                 'md:text-lg',
                 'lg:text-xl',
-                'xl:text-2xl',
+                'xl:text-2xl'
               )}
             >
               How about a Call or WhatsApp DM?
@@ -120,7 +120,7 @@ export const ContactInfo = async () => {
                 'sm:text-base',
                 'md:text-xl',
                 'lg:text-2xl',
-                'xl:text-3xl',
+                'xl:text-3xl'
               )}
             >
               +233 50 365 78 78
@@ -129,5 +129,5 @@ export const ContactInfo = async () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

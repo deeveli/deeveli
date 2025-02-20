@@ -1,5 +1,5 @@
-import Archives from './components/archive'
-import { WorkCategories } from './components/work-categories'
+import Archives from './components/archive';
+import { WorkCategories } from './components/work-categories';
 
 export default function Page() {
   return (
@@ -7,5 +7,5 @@ export default function Page() {
       <WorkCategories />
       <Archives />
     </>
-  )
+  );
 }

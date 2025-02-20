@@ -1,18 +1,18 @@
-'use client'
+'use client';
 
-import Link from 'next/link'
+import Link from 'next/link';
 
-import { siteConfig } from '@/data/app'
-import { useMediaQuery, useOnScroll } from '@/hooks'
-import { cn } from '@/lib/utils'
+import { siteConfig } from '@/data/app';
+import { useMediaQuery, useOnScroll } from '@/hooks';
+import { cn } from '@/lib/utils';
 
-import { NavigationMenuBar } from '../navigation-menu'
-import SideMenu from '../sidebar/side-menu'
-import ThemeSwitch from '../theme-switch'
+import { NavigationMenuBar } from '../navigation-menu';
+import SideMenu from '../sidebar/side-menu';
+import ThemeSwitch from '../theme-switch';
 
 const Header = () => {
-  const isScrolled = useOnScroll()
-  const isMobileOrTablet = useMediaQuery('(max-width: 640px)')
+  const isScrolled = useOnScroll();
+  const isMobileOrTablet = useMediaQuery('(max-width: 640px)');
 
   return (
     <header
@@ -28,7 +28,7 @@ const Header = () => {
         'xl:h-20',
         isScrolled
           ? 'shadow-sm backdrop-blur-[10px] duration-300 ease-in-out'
-          : '',
+          : ''
       )}
     >
       {isMobileOrTablet ? (
@@ -40,7 +40,7 @@ const Header = () => {
               'sm:text-2xl',
               'md:text-3xl',
               'lg:text-4xl',
-              'xl:text-9xl',
+              'xl:text-9xl'
             )}
           >
             {siteConfig.name}
@@ -61,7 +61,7 @@ const Header = () => {
               'sm:text-2xl',
               'md:text-2xl',
               'lg:text-2xl',
-              'xl:text-5xl',
+              'xl:text-5xl'
             )}
           >
             {siteConfig.name}
@@ -73,7 +73,7 @@ const Header = () => {
         </div>
       )}
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

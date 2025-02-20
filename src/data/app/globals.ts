@@ -1,5 +1,5 @@
-import Placeholder from '../../../public/media/jpg/works-placeholder.jpg'
-import Meta from '../../../public/media/svg/clients/meta.svg'
+import Placeholder from '../../../public/media/jpg/works-placeholder.jpg';
+import Meta from '../../../public/media/svg/clients/meta.svg';
 
 export const aboutImagesPick = [
   {
@@ -27,7 +27,7 @@ export const aboutImagesPick = [
     width: '500px',
     height: '0',
   },
-]
+];
 export const archivesData = [
   { work: 'Steaman' },
   { work: 'Steaman' },
@@ -38,7 +38,7 @@ export const archivesData = [
   { work: 'Steaman' },
   { work: 'Steaman' },
   { work: 'Steaman' },
-]
+];
 export const awardsLogoData = [
   {
     src: '/media/svg/awards/overleaf.svg',
@@ -75,7 +75,7 @@ export const awardsLogoData = [
     name: 'Webex',
     awards: ['Webpick of the Day'],
   },
-]
+];
 export const clientsLogoData = [
   {
     src: '/media/works/steaman-heights/logo.png',
@@ -105,7 +105,7 @@ export const clientsLogoData = [
     src: '/media/works/steaman-heights/logo.png',
     alt: 'steaman-logo-hush-ux',
   },
-]
+];
 
 export const clientsData = [
   // 1. MARQETA - Client Information
@@ -523,7 +523,7 @@ export const clientsData = [
     ht4a: 'Collaborative Development',
     st4a: `Our collaborative approach involved ongoing discussions to understand the vision and preferences. The app's development was a partnership, ensuring that Reebo aligns perfectly with the goals and expectations of our client.`,
   },
-]
+];
 
 export const faqData = [
   {
@@ -541,7 +541,7 @@ Furthermore, we boast an in-house content production studio that provides creati
 
 For web projects, we integrate considerations for SEO into our process to ensure that our client's websites are optimized for search engines; however, SEO is not offered as a standalone service.`,
   },
-]
+];
 
 export const footerNavigationData = [
   {
@@ -552,7 +552,7 @@ export const footerNavigationData = [
     page: 'Contact',
     href: '/contact',
   },
-]
+];
 
 export const privacyData = {
   privacyPolicy: {
@@ -595,7 +595,7 @@ export const privacyData = {
     ],
     sht3: 'Tracking Technologies and Cookies',
   },
-}
+};
 
 export const servicesInfoData = [
   {
@@ -679,7 +679,7 @@ export const servicesInfoData = [
       'Emerging Tech (AI, AR/VR, Wearables, Web3)',
     ],
   },
-]
+];
 
 export const services = [
   {
@@ -730,7 +730,7 @@ export const services = [
       'Brand Experiences',
     ],
   },
-]
+];
 
 export const statsData = [
   {
@@ -748,7 +748,7 @@ export const statsData = [
     title: 'Projects Completed',
     number: '10+',
   },
-]
+];
 
 export const testimonialsData = [
   {
@@ -791,7 +791,7 @@ export const testimonialsData = [
     testimonial: `"We truly appreciate the creativity & hard work of the entire Hush UX team in bringing our new branding and vision to life.
                   We’ve already received a lot of positive feedback from leadership and colleagues across the company.”`,
   },
-]
+];
 
 export const whyHushData = [
   {
@@ -812,7 +812,7 @@ export const whyHushData = [
     descriptionOne: `We create designs that can easily scale and sustain your business goals for years to come. `,
     descriptionTwo: `Our portfolio features multiple websites and products that have remained untouched for 5+ years, proving our work is future-proof.`,
   },
-]
+];
 
 export const worksData = [
   {
@@ -851,7 +851,7 @@ export const worksData = [
     height: '900px',
     width: '700px',
   },
-]
+];
 
 export const workCategoriesData = [
   {
@@ -874,4 +874,4 @@ export const workCategoriesData = [
     workCategory: 'Branding',
     info: 'Brands that thrive in the digital age',
   },
-]
+];

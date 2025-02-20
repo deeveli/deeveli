@@ -1,8 +1,8 @@
 // Components/little-fingers/stats-pick.tsx
-import Balancer from 'react-wrap-balancer'
+import Balancer from 'react-wrap-balancer';
 
-import type { PartnerServiceInfoProps } from '@/data/app/interface'
-import { cn } from '@/lib/utils'
+import type { PartnerServiceInfoProps } from '@/data/app/interface';
+import { cn } from '@/lib/utils';
 
 export const Skills: React.FC<PartnerServiceInfoProps> = async ({
   service,
@@ -20,12 +20,12 @@ export const Skills: React.FC<PartnerServiceInfoProps> = async ({
           'sm:py-10',
           'md:py-20',
           'lg:py-30',
-          'xl:py-40',
+          'xl:py-40'
         )}
       >
         <div
           className={cn(
-            'flex w-full flex-row sm:flex-wrap sm:gap-20 md:flex-nowrap md:gap-40 lg:gap-60',
+            'flex w-full flex-row sm:flex-wrap sm:gap-20 md:flex-nowrap md:gap-40 lg:gap-60'
           )}
         >
           {/* Tools */}
@@ -39,13 +39,13 @@ export const Skills: React.FC<PartnerServiceInfoProps> = async ({
                   'sm:text-base',
                   'md:text-lg',
                   'lg:text-xl',
-                  'xl:text-3xl',
+                  'xl:text-3xl'
                 )}
               >
                 <p
                   className={cn(
                     'font-bold underline sm:underline-offset-4 md:underline-offset-8',
-                    'sm:leading-normal md:leading-relaxed',
+                    'sm:leading-normal md:leading-relaxed'
                   )}
                 >
                   <Balancer>Productivity Tools</Balancer>
@@ -58,7 +58,7 @@ export const Skills: React.FC<PartnerServiceInfoProps> = async ({
                   'sm:text-xs',
                   'md:text-xs',
                   'lg:text-base',
-                  'xl:text-xl',
+                  'xl:text-xl'
                 )}
               >
                 {service.tools.map((tools, index) => (
@@ -66,7 +66,7 @@ export const Skills: React.FC<PartnerServiceInfoProps> = async ({
                     key={index}
                     className={cn(
                       'sm:pb-1 md:pb-3',
-                      'font-normal sm:leading-normal md:leading-relaxed',
+                      'font-normal sm:leading-normal md:leading-relaxed'
                     )}
                   >
                     {tools}
@@ -79,7 +79,7 @@ export const Skills: React.FC<PartnerServiceInfoProps> = async ({
           <div className={cn('flex flex-wrap sm:w-full md:w-1/2')}>
             <div
               className={cn(
-                'flex w-full flex-row justify-between sm:gap-x-5 md:gap-x-10',
+                'flex w-full flex-row justify-between sm:gap-x-5 md:gap-x-10'
               )}
             >
               <div
@@ -88,13 +88,13 @@ export const Skills: React.FC<PartnerServiceInfoProps> = async ({
                   'sm:text-base',
                   'md:text-lg',
                   'lg:text-xl',
-                  'xl:text-3xl',
+                  'xl:text-3xl'
                 )}
               >
                 <p
                   className={cn(
                     'font-bold underline sm:underline-offset-4 md:underline-offset-8',
-                    'sm:leading-normal md:leading-relaxed',
+                    'sm:leading-normal md:leading-relaxed'
                   )}
                 >
                   <Balancer>Skills</Balancer>
@@ -106,7 +106,7 @@ export const Skills: React.FC<PartnerServiceInfoProps> = async ({
                   'sm:text-xs',
                   'md:text-xs',
                   'lg:text-base',
-                  'xl:text-xl',
+                  'xl:text-xl'
                 )}
               >
                 {service.skills.map((tools, index) => (
@@ -114,7 +114,7 @@ export const Skills: React.FC<PartnerServiceInfoProps> = async ({
                     key={index}
                     className={cn(
                       'sm:pb-1 md:pb-1',
-                      'font-normal sm:leading-normal md:leading-relaxed',
+                      'font-normal sm:leading-normal md:leading-relaxed'
                     )}
                   >
                     {tools}
@@ -126,5 +126,5 @@ export const Skills: React.FC<PartnerServiceInfoProps> = async ({
         </div>
       </section>
     </>
-  )
-}
+  );
+};

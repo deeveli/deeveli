@@ -10,14 +10,14 @@ export const projectPictures = [
     id: 2,
     client: 'Cash-Go',
     clientSlug: 'cash-go',
-    slug: ['ui-ux-design', ],
+    slug: ['ui-ux-design'],
     images: ['/media/works/cash-go'],
   },
   {
     id: 3,
     client: 'Garia',
     clientSlug: 'garia',
-    slug: ['ui-ux-design',],
+    slug: ['ui-ux-design'],
     images: [
       '/media/works/garia/garia-1.jpg',
       '/media/works/garia/garia-2.jpg',
@@ -75,7 +75,7 @@ export const projectPictures = [
     id: 6,
     client: 'Ordotech',
     clientSlug: 'ordotech',
-    slug: ['ui-ux-design',],
+    slug: ['ui-ux-design'],
     images: ['/media/works/ordotech/ordotech-1.jpg'],
   },
   {
@@ -138,21 +138,21 @@ export const projectPictures = [
     id: 11,
     client: 'Pro Jobs',
     clientSlug: 'pro-jobs',
-    slug: ['ui-ux-design',],
+    slug: ['ui-ux-design'],
     images: ['/media/works/pro-jobs/pro-jobs-1.jpg'],
   },
   {
     id: 12,
     client: 'Reebo',
     clientSlug: 'reebo',
-    slug: ['ui-ux-design',],
+    slug: ['ui-ux-design'],
     images: ['/media/works/reebo/reebo-1.jpg'],
   },
   {
     id: 13,
     client: 'Steaman Heights',
     clientSlug: 'steaman-heights',
-    slug: ['ui-ux-design',],
+    slug: ['ui-ux-design'],
     images: [
       '/media/works/steaman-heights/steaman-heights-1.jpg',
       '/media/works/steaman-heights/steaman-heights-2.jpg',
@@ -195,14 +195,14 @@ export const projectPictures = [
     id: 14,
     client: 'Steaman Mall',
     clientSlug: 'steaman-mall',
-    slug: ['ui-ux-design',],
+    slug: ['ui-ux-design'],
     images: ['/media/works/steaman-mall/steaman-mall-1.jpg'],
   },
   {
     id: 15,
     client: 'Taxlaw GH',
     clientSlug: 'taxlaw-gh',
-    slug: ['ui-ux-design',],
+    slug: ['ui-ux-design'],
     images: ['/media/works/taxlaw-gh/taxlaw-gh-1.jpg'],
   },
   {
@@ -216,7 +216,7 @@ export const projectPictures = [
     id: 17,
     client: 'Trendy Real Estate',
     clientSlug: 'trendy-real-estate',
-    slug: [ 'ui-ux-design',],
+    slug: ['ui-ux-design'],
     images: [
       '/media/works/trendy-real-estates/trendy-real-estates-1.jpg',
       '/media/works/trendy-real-estates/trendy-real-estates-2.jpg',
@@ -247,4 +247,4 @@ export const projectPictures = [
       '/media/works/trendy-real-estates/trendy-real-estates-27.jpg',
     ],
   },
-]
+];

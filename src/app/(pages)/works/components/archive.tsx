@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-key */
-import Balancer from 'react-wrap-balancer'
+import Balancer from 'react-wrap-balancer';
 
-import { clients } from '@/data/app/content/clients'
-import { cn } from '@/lib/utils'
+import { clients } from '@/data/app/content/clients';
+import { cn } from '@/lib/utils';
 
-import ArchivePick from './little-fingers/archive-pick'
+import ArchivePick from './little-fingers/archive-pick';
 
 const Archives = () => {
   return (
@@ -20,7 +20,7 @@ const Archives = () => {
         'md:py-20',
         'lg:py-30',
         'xl:py-40',
-        'align-center justify-center',
+        'align-center justify-center'
       )}
     >
       <h2
@@ -33,26 +33,26 @@ const Archives = () => {
           'sm:pb-2',
           'md:pb-6',
           'lg:pb-8',
-          'xl:pb-12',
+          'xl:pb-12'
         )}
       >
         <Balancer>Archives</Balancer>
       </h2>
       <div
         className={cn(
-          'grid sm:grid-cols-2 sm:gap-2 md:grid-cols-4 md:gap-6 lg:gap-8 xl:gap-12',
+          'grid sm:grid-cols-2 sm:gap-2 md:grid-cols-4 md:gap-6 lg:gap-8 xl:gap-12'
         )}
       >
         {clients
           .filter((archived) => archived.archived === 'Yes')
           .map((work, index) => (
-          <div className={cn('')}>
-            <ArchivePick key={index} client={work} />
-          </div>
-        ))}
+            <div className={cn('')}>
+              <ArchivePick key={index} client={work} />
+            </div>
+          ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Archives
+export default Archives;

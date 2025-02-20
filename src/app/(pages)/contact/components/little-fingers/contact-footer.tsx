@@ -5,12 +5,12 @@ import {
   Instagram,
   Linkedin,
   Twitter,
-} from 'lucide-react'
-import Link from 'next/link'
-import Balancer from 'react-wrap-balancer'
+} from 'lucide-react';
+import Link from 'next/link';
+import Balancer from 'react-wrap-balancer';
 
-import { siteConfig } from '@/data/app'
-import { cn } from '@/lib/utils'
+import { siteConfig } from '@/data/app';
+import { cn } from '@/lib/utils';
 
 export const ContactFooter = async () => {
   return (
@@ -25,12 +25,12 @@ export const ContactFooter = async () => {
         'sm:py-10',
         'md:py-16',
         'lg:py-20',
-        'xl:py-30',
+        'xl:py-30'
       )}
     >
       <div
         className={cn(
-          'flex w-full flex-col items-center justify-between gap-y-5 md:flex-row',
+          'flex w-full flex-col items-center justify-between gap-y-5 md:flex-row'
         )}
       >
         <div
@@ -40,7 +40,7 @@ export const ContactFooter = async () => {
             'sm:gap-5 sm:text-xs',
             'md:gap-5 md:text-sm',
             'lg:text-sm',
-            'xl:text-xl',
+            'xl:text-xl'
           )}
         >
           <Link href={siteConfig.author.dribbble}>
@@ -69,7 +69,7 @@ export const ContactFooter = async () => {
             'sm:text-xs',
             'md:text-sm',
             'lg:text-sm',
-            'xl:text-xl',
+            'xl:text-xl'
           )}
         >
           <Link href={'https://maps.app.goo.gl/Rx3wYE7k8vJMtTAU8'}>
@@ -80,7 +80,7 @@ export const ContactFooter = async () => {
 
       <div
         className={cn(
-          'flex w-full flex-col items-center justify-between gap-y-5 md:flex-row',
+          'flex w-full flex-col items-center justify-between gap-y-5 md:flex-row'
         )}
       >
         <p
@@ -89,7 +89,7 @@ export const ContactFooter = async () => {
             'sm:text-xs',
             'md:text-sm',
             'lg:text-sm',
-            'xl:text-lg',
+            'xl:text-lg'
           )}
         >
           Developed by{' '}
@@ -113,7 +113,7 @@ export const ContactFooter = async () => {
             'lg:text-sm',
             'xl:text-xl',
             'flex w-full flex-row items-center md:w-3/12',
-            'hover:underline hover:underline-offset-4',
+            'hover:underline hover:underline-offset-4'
           )}
         >
           <Copyright className={cn('mr-1')} />
@@ -121,5 +121,5 @@ export const ContactFooter = async () => {
         </a>
       </div>
     </div>
-  )
-}
+  );
+};

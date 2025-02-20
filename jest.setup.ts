@@ -5,9 +5,9 @@
  * Used for __tests__/testing-library.js
  * Learn more: https://github.com/testing-library/jest-dom
  */
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom';
 
-window.scrollTo = () => {}
+window.scrollTo = () => {};
 
 if (typeof window.matchMedia !== 'function') {
   Object.defineProperty(window, 'matchMedia', {
@@ -30,5 +30,5 @@ if (typeof window.matchMedia !== 'function') {
       removeEventListener: jest.fn(),
       dispatchEvent: jest.fn(),
     })),
-  })
+  });
 }

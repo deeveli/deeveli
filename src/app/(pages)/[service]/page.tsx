@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-import { deeveliData } from '@/data/app/content/partners/deeveli'
+import { deeveliData } from '@/data/app/content/partners/deeveli';
 
-import { Hero } from './components/hero'
-import { Projects } from './components/projects'
-import { Skills } from './components/skills'
+import { Hero } from './components/hero';
+import { Projects } from './components/projects';
+import { Skills } from './components/skills';
 
 interface ProjectProp {
   params: {
-    service: string
-  }
+    service: string;
+  };
 }
 
 const Page: React.FC<ProjectProp> = ({ params }) => {
@@ -22,7 +22,7 @@ const Page: React.FC<ProjectProp> = ({ params }) => {
       <div className="text-md flex h-80 w-full items-center justify-center bg-slate-700">
         Page not found
       </div>
-    )
+    );
   }
 
   return (

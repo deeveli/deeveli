@@ -625,4 +625,4 @@ export const deeveliData = {
       st4a: `Our collaborative approach involved ongoing discussions to understand the vision and preferences. The app's development was a partnership, ensuring that Reebo aligns perfectly with the goals and expectations of our client.`,
     },
   ],
-}
+};

@@ -1,17 +1,17 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import { useState } from 'react'
+import Image from 'next/image';
+import { useState } from 'react';
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/utils';
 
 interface FallbackImageProps {
-  videoSrc?: string
-  imageSrc?: string
-  alt: any
-  width: number
-  height: number
-  className?: string
+  videoSrc?: string;
+  imageSrc?: string;
+  alt: any;
+  width: number;
+  height: number;
+  className?: string;
 }
 
 export const FallbackImage: React.FC<FallbackImageProps> = ({
@@ -22,15 +22,15 @@ export const FallbackImage: React.FC<FallbackImageProps> = ({
   height,
   className,
 }) => {
-  const [videoLoaded, setVideoLoaded] = useState(false)
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   const handleVideoLoad = () => {
-    setVideoLoaded(true)
-  }
+    setVideoLoaded(true);
+  };
 
-  const srcI = imageSrc || '/undefined'
-  const srcV = videoSrc || '/undefined'
-  const altI = alt || 'undefined'
+  const srcI = imageSrc || '/undefined';
+  const srcV = videoSrc || '/undefined';
+  const altI = alt || 'undefined';
 
   return (
     <div className="relative">
@@ -43,7 +43,7 @@ export const FallbackImage: React.FC<FallbackImageProps> = ({
         width={width}
         height={height}
         className={cn(
-          ` ${className} h-auto w-full bg-slate-700 object-cover ${videoLoaded ? 'hidden' : 'block'}`,
+          ` ${className} h-auto w-full bg-slate-700 object-cover ${videoLoaded ? 'hidden' : 'block'}`
         )}
       />
       <video
@@ -58,5 +58,5 @@ export const FallbackImage: React.FC<FallbackImageProps> = ({
         Your browser does not support the video tag.
       </video>
     </div>
-  )
-}
+  );
+};

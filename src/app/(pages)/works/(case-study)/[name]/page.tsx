@@ -1,12 +1,12 @@
-import React from "react";
-import { clientsData } from "@/data/app/globals";
-import { Hero } from "./components/hero";
-import { SectionOne } from "./components/section-one";
-import { SectionTwo } from "./components/sectionTwo";
-import { SectionThree } from "./components/sectionThree";
-import { SectionFour } from "./components/sectionFour";
-import { NextCaseStudy } from "./components/next-case-study";
-import { clients } from "@/data/app/content/clients";
+import React from 'react';
+import { clientsData } from '@/data/app/globals';
+import { Hero } from './components/hero';
+import { SectionOne } from './components/section-one';
+import { SectionTwo } from './components/sectionTwo';
+import { SectionThree } from './components/sectionThree';
+import { SectionFour } from './components/sectionFour';
+import { NextCaseStudy } from './components/next-case-study';
+import { clients } from '@/data/app/content/clients';
 
 interface CaseStudyProps {
   params: {

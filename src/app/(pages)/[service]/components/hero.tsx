@@ -1,8 +1,8 @@
 // Components/little-fingers/stats-pick.tsx
-import Balancer from 'react-wrap-balancer'
+import Balancer from 'react-wrap-balancer';
 
-import type { PartnerServiceInfoProps } from '@/data/app/interface'
-import { cn } from '@/lib/utils'
+import type { PartnerServiceInfoProps } from '@/data/app/interface';
+import { cn } from '@/lib/utils';
 
 export const Hero: React.FC<PartnerServiceInfoProps> = ({ service }) => {
   return (
@@ -18,14 +18,14 @@ export const Hero: React.FC<PartnerServiceInfoProps> = ({ service }) => {
           'sm:py-10',
           'md:py-20',
           'lg:py-30',
-          'xl:py-40',
+          'xl:py-40'
         )}
       >
         <div className={cn('flex w-full flex-row justify-between')}>
           {/* Hero Text */}
           <div
             className={cn(
-              'items-left justify-left flex flex-col space-y-6 py-6 sm:w-full sm:gap-y-10 md:w-[75%] md:gap-y-20 lg:w-[45%]',
+              'items-left justify-left flex flex-col space-y-6 py-6 sm:w-full sm:gap-y-10 md:w-[75%] md:gap-y-20 lg:w-[45%]'
             )}
           >
             <div className={cn('flex w-full flex-wrap sm:gap-y-5 md:gap-y-10')}>
@@ -40,12 +40,12 @@ export const Hero: React.FC<PartnerServiceInfoProps> = ({ service }) => {
                     'md:text-7xl',
                     'lg:text-7xl',
                     'xl:text-9xl',
-                    'flex w-full flex-wrap',
+                    'flex w-full flex-wrap'
                   )}
                 >
                   <p
                     className={cn(
-                      'font-black sm:leading-normal md:leading-relaxed',
+                      'font-black sm:leading-normal md:leading-relaxed'
                     )}
                   >
                     <Balancer>{service.title}</Balancer>
@@ -55,7 +55,7 @@ export const Hero: React.FC<PartnerServiceInfoProps> = ({ service }) => {
               {/*  Hero Subtext */}
               <div
                 className={cn(
-                  'justify flex flex-row items-end justify-between',
+                  'justify flex flex-row items-end justify-between'
                 )}
               >
                 <div className={cn('flex flex-wrap sm:gap-y-10 md:gap-y-16')}>
@@ -64,13 +64,13 @@ export const Hero: React.FC<PartnerServiceInfoProps> = ({ service }) => {
                       'sm:text-base',
                       'md:text-lg',
                       'lg:text-xl',
-                      'xl:text-3xl',
+                      'xl:text-3xl'
                     )}
                   >
                     <p
                       className={cn(
                         // "sm:pb-5 md:pb-10",
-                        'font-normal sm:leading-normal md:leading-relaxed',
+                        'font-normal sm:leading-normal md:leading-relaxed'
                       )}
                     >
                       {service.subtext}
@@ -100,5 +100,5 @@ export const Hero: React.FC<PartnerServiceInfoProps> = ({ service }) => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};

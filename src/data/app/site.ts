@@ -1,7 +1,7 @@
 export const BASE_URL =
   process.env.NODE_ENV === 'production'
     ? 'https://deeveli.vercel.app'
-    : 'http://localhost:3000'
+    : 'http://localhost:3000';
 
 export const siteConfig = {
   name: 'deeveli',
@@ -377,4 +377,4 @@ export const siteConfig = {
     'technology trends',
     'digital trends',
   ],
-}
+};

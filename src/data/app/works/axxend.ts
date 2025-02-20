@@ -61,4 +61,4 @@ export const Axxend = {
   alt4a: 'axxend-ux-case-study',
   ht4a: 'Continuous Improvement',
   st4a: `We believe in continuous improvement and ongoing support to ensure that Axxend's software solutions evolve with their business. Our team provides regular updates, maintenance, and optimization to keep the systems running smoothly and efficiently, driving long-term success for Axxend.`,
-}
+};

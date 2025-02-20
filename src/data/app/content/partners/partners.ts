@@ -1,4 +1,4 @@
-import { deeveliData } from './deeveli'
+import { deeveliData } from './deeveli';
 export const partnerData = {
   heroText: 'Partners',
   heroSubText: 'A bit of text',
@@ -9,4 +9,4 @@ export const partnerData = {
       slug: deeveliData.slug,
     },
   ],
-}
+};

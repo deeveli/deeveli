@@ -55,4 +55,4 @@ export const CashGO = {
   alt4a: 'cash-go-ux-case-study',
   ht4a: 'Scalable Architecture',
   st4a: `The ATM UI design is built on a scalable architecture that can accommodate future enhancements and expansions. This ensures that Cash Go can adapt to evolving user needs and technological advancements, maintaining its position as a leading provider of self-service banking solutions.`,
-}
+};
